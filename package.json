@@ -1,0 +1,19 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood website construction",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sciLuv/RemiLiance_3_02062021.git"
+  },
+  "author": "SciLuv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sciLuv/RemiLiance_3_02062021/issues"
+  },
+  "homepage": "https://github.com/sciLuv/RemiLiance_3_02062021#readme"
+}
