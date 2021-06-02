@@ -1,0 +1,6 @@
+acceuil : 
+sans doute besoin div pour séparer le texte des card resto et le coeur.
+restaurant : 
+sans doute besoin div pour séparer deux section du header
+
+figure cover pour l'image du header des restaurant
