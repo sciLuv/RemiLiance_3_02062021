@@ -1,0 +1,27 @@
+footer{
+    @include padding-block(10px);
+    background-color: $color-dark;
+    h1{
+        color: $color-light;
+        font-size: 1.15em;
+    }
+    ul{
+        padding: 0px;
+        list-style: none;
+        li{
+            margin-bottom: 10px;
+            a{
+                display: flex;
+                color: $color-light;
+                i{
+                    margin-right: 17px;
+                }
+            }
+            &:nth-child(2){
+                i{
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

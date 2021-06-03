@@ -5,4 +5,10 @@ sans doute besoin div pour séparer deux section du header
 figure pour le tag et cover pour le nom de la class pour l'image du header des restaurant
 
 SASS :
-voir si il n'y a pas moyen de diminué la taille des nom des block et element
+
+faire un fichier dans layout pour les hover
+faire des mixin avec les flex et les z index, rechercher les mixin supplementaire
+faire des variables avec TOUTES les couleurs 
+ajouter des commentaires
+viré les divs surpplus (je pense au div lié aux i du footer et a la div contenant img restau)
+ranger code (espace, saut de ligne code PROPRE mise en page, mettre les regles qui vont ensemble ensemble (genre padding et margin))

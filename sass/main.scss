@@ -1,5 +1,20 @@
+//UTILS
 @import "./utils/variables";
+@import "./utils/mixins";
 
-body{
-    background-color: white;
-}
+//BASE
+@import "./base/base";
+@import "./base/typography";
+
+//COMPONENTS
+@import "./components/link";
+@import "./components/button";
+
+//LAYOUT
+@import "./layout/header.scss";
+@import "./layout/presentation";
+@import "./layout/footer";
+
+//PAGE
+@import "./pages/functionning";
+@import "./pages/restaurant";
