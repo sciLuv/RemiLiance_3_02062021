@@ -1,0 +1,66 @@
+.menu{
+    background-color: $color-info;
+    border-radius: 50px 50px 0px 0px;
+    padding: 40px 20px;
+}
+.menu__title{
+    @include flex(row, center, none);
+    h2{
+        width: 100%;
+        margin: 0px;
+        font-family: 'Shrikhand', cursive;
+    }
+    i{
+        justify-self: flex-end;
+        margin-right: 20px;
+    }
+}
+.meal-part{
+    h3{
+        width: 40px;
+        padding-bottom: 7px;
+        border-bottom: $color-tertiary 4px solid;
+    }
+}
+.course{
+    @include flex(row, center);
+    background-color: $color-light;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    height: 70px;
+    box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
+}
+.course__info{
+    @include flex(row, none, space-between);
+    @include width-height(100%, none, none, 0px);
+    margin-left: 15px;
+    .course__info__name-ingredient{
+        width: 70%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        h4{
+            margin : 0px 0px 5px 0px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .course__info__price{
+        @include flex(row, flex-end);
+        font-weight: bold;
+        margin-right: 25px;
+    }
+}
+.course__select{
+    @include width-height(60px, 70px);
+    @include flex;
+    background-color: $color-tertiary;
+    border-radius: 0px 20px 20px 0px;
+    display: none;
+    input{
+        @include width-height(20px, 20px);
+        appearance: none;
+        background-image: url(../../public/img/check-circle.svg);
+    }
+}

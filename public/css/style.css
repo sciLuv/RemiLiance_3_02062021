@@ -10,6 +10,9 @@ body {
   width: 100%;
   max-width: 1300px;
   min-width: 300px;
+  height: none;
+  max-height: none;
+  min-height: 1300px;
 }
 
 html {
@@ -25,85 +28,130 @@ a {
   color: black;
 }
 
-.presentation__btn {
+.btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
   z-index: 1;
-  margin: 33px 0px 55px 0px;
+  left: 0px;
+  top: 0px;
   width: 217px;
+  max-width: none;
+  min-width: none;
   height: 47px;
+  max-height: none;
+  min-height: none;
+  margin: 33px auto 55px auto;
+  border: none;
   border-radius: 40px;
   color: white;
   background: #FF79DA;
   background-image: linear-gradient(170deg, rgba(255, 255, 255, 0) 37%, #9356DC 100%);
   box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
-  transition: box-shadow 0.2s;
+  cursor: pointer;
+  font-size: medium;
 }
-.presentation__btn:hover {
-  box-shadow: -2px -3px 10px -4px rgba(0, 0, 0, 0.377);
-  transition: box-shadow 0.2s;
-}
-.presentation__btn:hover::after {
-  opacity: 1;
-  transition: opacity 0.2s;
-}
-.presentation__btn::after {
-  content: "";
+.btn::after {
   position: absolute;
   z-index: -1;
-  opacity: 0;
+  left: 0px;
+  top: 0px;
   width: 217px;
+  max-width: none;
+  min-width: none;
   height: 47px;
+  max-height: none;
+  min-height: none;
+  content: "";
   border-radius: 40px;
+  opacity: 0;
   background: #FF79DA;
   background-image: linear-gradient(177deg, rgba(255, 255, 255, 0) 22%, #9356DC 100%);
-  transition: opacity 0.2s;
 }
 
-header .logo {
-  width: 100%;
-  height: 65px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.btn--menu {
+  margin: 40px auto 10px auto;
 }
-header .logo h1 {
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HOMEHEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  min-width: none;
+  height: 65px;
+  max-height: none;
+  min-height: none;
+}
+.logo h1 {
   font-size: 1.85em;
   margin-top: 30px;
 }
-header #localisation {
-  width: 100%;
-  height: 47px;
+
+#localisation {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: none;
+  min-width: none;
+  height: 47px;
+  max-height: none;
+  min-height: none;
   background-color: #f6f6f6;
   box-shadow: -4px 17px 18px -20px rgba(0, 0, 0, 0.432) inset;
 }
-header #localisation div {
+#localisation div {
   position: relative;
+  z-index: auto;
+  left: 0px;
+  top: 0px;
   left: -13px;
 }
-header #localisation div span {
+#localisation div span {
   margin-left: 11px;
 }
 
-.presentation {
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MENUHEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+.header--menu {
+  width: 100%;
+  max-width: none;
+  min-width: none;
+  height: 310px;
+  max-height: none;
+  min-height: none;
+}
+.header--menu .header--menu__title {
   display: flex;
-  flex-direction: column;
-  text-align: center;
+  flex-direction: row;
   align-items: center;
-  padding: 0px 35px;
-  background-color: #fbfbfb;
+  justify-content: center;
+  height: 65px;
 }
-.presentation h2 {
-  padding: 0px 15px;
-  margin: 40px 0px 0px 0px;
+.header--menu .header--menu__title .header--menu__title__back-btn {
+  position: absolute;
+  z-index: auto;
+  left: 20px;
+  top: none;
 }
-.presentation p {
-  margin: 25px 0px 0px 0px;
+.header--menu img {
+  width: 100%;
+  max-width: none;
+  min-width: none;
+  height: 290px;
+  max-height: none;
+  min-height: none;
+  position: relative;
+  z-index: -1;
+  left: none;
+  top: none;
+  object-fit: cover;
 }
 
 footer {
@@ -132,6 +180,21 @@ footer ul li:nth-child(2) i {
   margin-right: 10px;
 }
 
+.btn {
+  transition: box-shadow 0.2s;
+}
+.btn:hover {
+  box-shadow: -2px -3px 10px -4px rgba(0, 0, 0, 0.377);
+  transition: box-shadow 0.2s;
+}
+.btn:hover::after {
+  opacity: 1;
+  transition: opacity 0.2s;
+}
+.btn::after {
+  transition: opacity 0.2s;
+}
+
 .functionning {
   padding: 50px 20px 60px 20px;
 }
@@ -141,83 +204,239 @@ footer ul li:nth-child(2) i {
 .functionning h2 + .functionning__card::before {
   content: "1";
 }
-.functionning .functionning__card {
-  min-height: 75px;
-  box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
-  border-radius: 23px;
-  background-color: #fbfbfb;
-  margin: 0px 0px 20px 15px;
+
+.functionning__card {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   position: relative;
   z-index: 1;
+  left: 0px;
+  top: 0px;
+  min-height: 75px;
+  margin: 0px 0px 20px 15px;
+  border-radius: 23px;
+  background-color: #fbfbfb;
+  box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
 }
-.functionning .functionning__card span:last-child {
-  margin-left: 15px;
-}
-.functionning .functionning__card::before {
-  content: "2";
+.functionning__card::before {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  z-index: -1;
   left: -13px;
-  height: 23px;
+  top: 0px;
   width: 23px;
+  max-width: none;
+  min-width: none;
+  height: 23px;
+  max-height: none;
+  min-height: none;
+  content: "2";
   border-radius: 20px;
   color: white;
   background-color: #9356DC;
-  z-index: -1;
+}
+.functionning__card:last-child::before {
+  content: "3";
+}
+.functionning__card span:first-child {
+  color: #7b7b7b;
+}
+.functionning__card span:last-child {
+  margin-left: 15px;
+}
+
+.presentation {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  padding: 0px 35px;
+  background-color: #fbfbfb;
 }
-.functionning .functionning__card:last-child::before {
-  content: "3";
+.presentation h2 {
+  padding: 0px 15px;
+  margin: 40px 0px 0px 0px;
+}
+.presentation p {
+  margin: 25px 0px 0px 0px;
 }
 
 .restaurant {
   background-color: #fbfbfb;
   padding: 50px 20px 60px 20px;
 }
-.restaurant .restaurant__card {
+
+.restaurant__card {
+  width: 100%;
+  max-width: none;
+  min-width: none;
   height: 250px;
-  background-color: white;
+  max-height: none;
+  min-height: none;
   border-radius: 22px;
   margin-bottom: 20px;
+  background-color: white;
   box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
 }
-.restaurant .restaurant__card .restaurant__card__link {
-  width: 100%;
-  height: 100%;
+.restaurant__card a .restaurant__card__img {
+  position: relative;
+  z-index: 1;
+  left: 0px;
+  top: 0px;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__img {
+.restaurant__card a .restaurant__card__img img {
+  width: 100%;
+  max-width: none;
+  min-width: none;
   height: 175px;
-  width: 100%;
-}
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__img img {
+  max-height: none;
+  min-height: none;
   border-radius: 22px 22px 0px 0px;
-  height: 175px;
-  width: 100%;
   object-fit: cover;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__info {
+.restaurant__card a .restaurant__card__img--new::before {
+  content: "Nouveau";
+  position: absolute;
+  z-index: 1;
+  left: none;
+  top: 15px;
+  right: 15px;
+  color: #2c9c81;
+  background-color: #99E2D0;
+  padding: 8px 13px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+.restaurant__card a .restaurant__card__info {
   display: flex;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__info div:first-child {
+.restaurant__card a .restaurant__card__info div:first-child {
   width: 90%;
   padding-left: 16px;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__info div:first-child h3 {
+.restaurant__card a .restaurant__card__info div:first-child h3 {
   margin: 15px 0px 5px 0px;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__info div:last-child {
+.restaurant__card a .restaurant__card__info div:last-child {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: flex-end;
   width: 50%;
+  max-width: none;
+  min-width: none;
   height: 62px;
+  max-height: none;
+  min-height: none;
 }
-.restaurant .restaurant__card .restaurant__card__link .restaurant__card__link__info div:last-child i {
+.restaurant__card a .restaurant__card__info div:last-child i {
   margin: 10px 25px 0px 0px;
+}
+
+.menu {
+  background-color: #fbfbfb;
+  border-radius: 50px 50px 0px 0px;
+  padding: 40px 20px;
+}
+
+.menu__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: none;
+}
+.menu__title h2 {
+  width: 100%;
+  margin: 0px;
+  font-family: "Shrikhand", cursive;
+}
+.menu__title i {
+  justify-self: flex-end;
+  margin-right: 20px;
+}
+
+.meal-part h3 {
+  width: 40px;
+  padding-bottom: 7px;
+  border-bottom: #99E2D0 4px solid;
+}
+
+.course {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  height: 70px;
+  box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
+}
+
+.course__info {
+  display: flex;
+  flex-direction: row;
+  align-items: none;
+  justify-content: space-between;
+  width: 100%;
+  max-width: none;
+  min-width: 0px;
+  height: none;
+  max-height: none;
+  min-height: none;
+  margin-left: 15px;
+}
+.course__info .course__info__name-ingredient {
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course__info .course__info__name-ingredient h4 {
+  margin: 0px 0px 5px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.course__info .course__info__price {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  font-weight: bold;
+  margin-right: 25px;
+}
+
+.course__select {
+  width: 60px;
+  max-width: none;
+  min-width: none;
+  height: 70px;
+  max-height: none;
+  min-height: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #99E2D0;
+  border-radius: 0px 20px 20px 0px;
+  display: none;
+}
+.course__select input {
+  width: 20px;
+  max-width: none;
+  min-width: none;
+  height: 20px;
+  max-height: none;
+  min-height: none;
+  appearance: none;
+  background-image: url(../../public/img/check-circle.svg);
 }
 
 /*# sourceMappingURL=style.css.map */

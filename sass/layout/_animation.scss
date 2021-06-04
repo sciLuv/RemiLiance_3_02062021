@@ -1,0 +1,14 @@
+.btn{
+    transition: box-shadow 0.2s;
+    &:hover{
+        box-shadow: -2px -3px 10px -4px rgba(0, 0, 0, 0.377);
+        transition: box-shadow 0.2s;
+        &::after{
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+    &::after{
+        transition: opacity 0.2s;
+    }
+}

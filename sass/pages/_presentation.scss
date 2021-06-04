@@ -1,8 +1,6 @@
 .presentation{
-    display: flex;
-    flex-direction: column;
+    @include flex;
     text-align: center;
-    align-items: center;
     padding: 0px 35px;
     background-color: $color-info;
     h2{

@@ -1,14 +1,14 @@
-acceuil : 
-sans doute besoin div pour séparer le texte des card resto et le coeur.
-restaurant : 
-sans doute besoin div pour séparer deux section du header
-figure pour le tag et cover pour le nom de la class pour l'image du header des restaurant
+les after des couleurs
 
-SASS :
+les animation des tuiles des restau, en plus des coeurs eux meme
+animations des liens footer
+animation de la fleche en haut
 
-faire un fichier dans layout pour les hover
-faire des mixin avec les flex et les z index, rechercher les mixin supplementaire
-faire des variables avec TOUTES les couleurs 
-ajouter des commentaires
-viré les divs surpplus (je pense au div lié aux i du footer et a la div contenant img restau)
-ranger code (espace, saut de ligne code PROPRE mise en page, mettre les regles qui vont ensemble ensemble (genre padding et margin))
+pour le responsive :
+les tuiles par deux puis par trois en ligne. 
+les pages de menu :
+mettre la photo plus grosse et avec un dégradé
+
+
+animation de chargement :
+le logo avec des icones de bouffe a coté

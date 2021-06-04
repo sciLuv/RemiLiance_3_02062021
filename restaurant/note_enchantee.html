@@ -13,93 +13,85 @@
 <body>
     <div class="content">
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~HEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <header>
-            <div class="header-title">
-                <div class="back-btn">
-                    <!-- icon back btn-->
-                </div>
-            <a href="../index.html" class="logo">
-                <h1>ohmyfood</h1>
-            </a>
+        <header class="header--menu">
+            <div class="header--menu__title">
+                <a href="../index.html" class="header--menu__title__back-btn">
+                    <i class="fas fa-arrow-left fa-lg"></i>
+                </a>
+                <a href="../index.html" class="header--menu__title__logo">
+                    <h1>ohmyfood</h1>
+                </a>
             </div>
-            <div class="header-img">
-                <!-- img header-->
-            </div>
+            <img src="/public/img/note_enchantee.jpg" alt="">
         </header>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MAIN~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-            <article>
-                <h2>La note enchantée</h2>
+            <article class="menu">
+                <div class="menu__title">
+                        <h2>La note enchantée</h2>
+                    <i class="far fa-heart fa-lg"></i>
+                </div>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION-1~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <section class="meal-part">
                     <h3>Entrées</h3>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Ravioles de foie gras</h4>
                             <span>Accompagnés de leur crème à la truffe</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>25€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                    <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Caviar osciètre</h4>
                             <span>Sur blini à la farine de blé noir</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>35€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                    <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Homard et espuma de potiron</h4>
                             <span>Mariné aux zestes d'orange</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>20€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                        <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Foie gras de canard cuit entier</h4>
                             <span>Confiture de figue et pain toasté</span>
                         </div>
-                        <div class="meal-part__course__info__price">
+                        <div class="course__info__price">
                             <span>35€</span>
-                        </div>
-                        <div class="meal-part__course__info__select">
-                            <div class="meal-part__course__info__select__img">
-                                <input type="checkbox">
-                            </div>
-                        </div>
+                        </div>   
+                        <div class="course__select">
+                                <input type="checkbox" checked>
                         </div>
                     </div>
                 </section>
@@ -107,113 +99,101 @@
                 <section class="meal-part">
                     <h3>Plats</h3>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Noix de coquilles Saint-Jacques</h4>
                             <span>Sur lit de purée de céleri-rave</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>40€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Langoustine poêlée</h4>
                             <span>Purée de patate douce</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>35€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Mijoté de queue de boeuf</h4>
                             <span>Et riz sauvage aux zestes de citron</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>44€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
                 </section>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~SECTION-3~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                 <section class="meal-part">
                     <h3>Desserts</h3>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Macaron noisette et chocolat</h4>
                             <span>Glace au caramel brun et sel de Guérande</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>18€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Baba au rhum revisité</h4>
                             <span>Avec son coulis de citron</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>22€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
 <!-- PLAT-->
-                    <div class="meal-part__course">
-                        <div class="meal-part__course__info">
-                           <div class="meal-part__course__info__name-ingredient">
+                    <div class="course">
+                        <div class="course__info">
+                           <div class="course__info__name-ingredient">
                             <h4>Tarte au citron meringuée</h4>
                             <span>Déstructurée</span>
                            </div>
-                           <div class="meal-part__course__info__price">
+                           <div class="course__info__price">
                                <span>23€</span>
                            </div>
-                           <div class="meal-part__course__info__select">
-                               <div class="meal-part__course__info__select__img">
-                                   <input type="checkbox">
-                               </div>
+                        </div>   
+                           <div class="course__select">
+                                <input type="checkbox" checked>
                            </div>
-                        </div>
                     </div>
                 </section>
-                <input type="submit" value="Commander">
+                <a href="" class="btn btn--menu">Commander</a>
             </article>
         </main>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~FOOTER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->

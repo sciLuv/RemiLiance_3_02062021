@@ -11,10 +11,12 @@
 @import "./components/button";
 
 //LAYOUT
-@import "./layout/header.scss";
-@import "./layout/presentation";
+@import "./layout/header";
 @import "./layout/footer";
+@import "./layout/animation";
 
 //PAGE
 @import "./pages/functionning";
+@import "./pages/presentation";
 @import "./pages/restaurant";
+@import "./pages/menu";

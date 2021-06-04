@@ -6,38 +6,33 @@
                 content: "1";
         }
     }
-    .functionning__card{
-        min-height: 75px;
-        box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
-        border-radius: 23px;
-        background-color: $color-info;
-        margin: 0px 0px 20px 15px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        position: relative;
-        z-index: 1;
-        span{
-            &:last-child {
-                margin-left: 15px;
-            }
-        }
+}
+.functionning__card{
+    @include flex(row, center, flex-start);
+    @include position(relative, 1);
+    min-height: 75px;
+    margin: 0px 0px 20px 15px;
+    border-radius: 23px;
+    background-color: $color-info;
+    box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
         &::before{
+            @include flex;
+            @include position(relative, -1, -13px);
+            @include width-height(23px, 23px);
             content: "2";
-            position: relative;
-            left: -13px;
-            height: 23px;
-            width: 23px;
             border-radius: 20px;
-            color: white;
+            color: $color-light;
             background-color: $color-primary;
-            z-index: -1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }        
         &:last-child::before{
             content: "3";
         }
+        span{
+            &:first-child{
+                color: darken($color-info, 50%);
+            }
+            &:last-child {
+                margin-left: 15px;
+            }
+        }
     }
-}

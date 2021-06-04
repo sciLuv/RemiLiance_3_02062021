@@ -1,3 +1,28 @@
 @mixin padding-block($top: 50px, $bottom : 60px, $side: 20px ){
     padding: $top $side $bottom $side;
 }
+
+@mixin flex($direction : column, $align : center, $justify: center){
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin position($position : relative, $z-index : auto, $left : 0px, $top : 0px){
+    position: $position;
+    z-index: $z-index;
+    left: $left;
+    top: $top;
+}
+
+@mixin width-height($width : 100%, $height : none,
+                    $max-width : none, $min-width: none, 
+                    $max-height : none, $min-height: none){
+    width: $width;
+    max-width: $max-width;
+    min-width: $min-width;
+    height: $height;
+    max-height: $max-height;
+    min-height: $max-width;
+}
