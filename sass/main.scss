@@ -9,13 +9,16 @@
 //COMPONENTS
 @import "./components/link";
 @import "./components/button";
+@import "./components/like";
 
 //LAYOUT
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/animation";
+@import "./layout/transitions";
+@import "./layout/keyframes";
 
 //PAGE
+@import "./pages/spinn-loader";
 @import "./pages/functionning";
 @import "./pages/presentation";
 @import "./pages/restaurant";

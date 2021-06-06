@@ -10,9 +10,20 @@
         margin: 0px;
         font-family: 'Shrikhand', cursive;
     }
-    i{
+    div{
         justify-self: flex-end;
-        margin-right: 20px;
+        i{
+            &:first-child{
+                position: relative;
+                top: 10px;
+            }
+            &:last-child{
+                position: relative;
+                top: -10.75px;
+                padding-top: 2px;
+
+            }
+        }
     }
 }
 .meal-part{
@@ -25,6 +36,7 @@
 .course{
     @include flex(row, center);
     background-color: $color-light;
+    overflow: hidden;
     border-radius: 20px;
     margin-bottom: 20px;
     height: 70px;
@@ -53,13 +65,12 @@
     }
 }
 .course__select{
-    @include width-height(60px, 70px);
     @include flex;
+    @include width-height(0px, 70px);
     background-color: $color-tertiary;
     border-radius: 0px 20px 20px 0px;
-    display: none;
     input{
-        @include width-height(20px, 20px);
+        @include width-height(25px, 25px);
         appearance: none;
         background-image: url(../../public/img/check-circle.svg);
     }

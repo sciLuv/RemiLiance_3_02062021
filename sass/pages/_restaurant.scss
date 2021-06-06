@@ -8,6 +8,17 @@
     margin-bottom: 20px;
     background-color: $color-light;
     box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
+    @include position(relative, 1);
+    &::after{
+        opacity: 0;
+        @include flex;
+        @include position(absolute, -1);
+        @include width-height(100%, 250px);
+        content: "";
+        border-radius: 23px;
+        background-image: linear-gradient(-170deg, $transparency 37%, $color-primary 100%);
+        box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
+    }    
     a{
         .restaurant__card__img{
             @include position(relative, 1);
@@ -41,8 +52,17 @@
             div:last-child{
                 @include flex(row, center, flex-end);
                 @include width-height(50%, 62px);
-                i{
-                    margin:10px 25px 0px 0px;
+                .like{
+                    height: 25px;
+                    width: 25px;
+                    i{
+                        padding:10px 25px 0px 0px !important;
+                        &:first-child{
+                            position: relative;
+                            left: 46.45px;
+                            top: 0.7px;
+                        }
+                }
                 }
             }
         }

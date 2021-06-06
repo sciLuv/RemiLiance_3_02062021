@@ -1,0 +1,133 @@
+#loading-spinner{
+    @include position(absolute, 10);
+    @include width-height(100%, 2348.77px);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 250px;
+    background-color: $color-light;
+    /*transform: scale(0)*/
+    div{
+        @include flex;
+        @include width-height(90%);
+        text-align: center;
+        h1{
+            @include width-height(260px, 80px);
+            transform: scale(1.5);
+            margin: 0px;
+            @include spin-loader-title(280deg,rgba(255, 255, 255, 0.116),50%,65%,100%);
+            &::after{
+                @include position(absolute, -2, 0px, 0px);
+                @include width-height(260px, 80px);
+                content: "ohmyfood";
+                opacity: 0;
+                @include spin-loader-title(220deg,rgba(255, 255, 255, 0.116),57%,70%,100%);
+            }
+            &::before{
+                @include position(absolute, -2, 0px, 0px);
+                @include width-height(260px, 80px);
+                content: "ohmyfood";
+                opacity: 0;
+                @include spin-loader-title(240deg,rgba(255, 255, 255, 0.473),30%,50%,60%);
+            }
+        }
+        .dots{
+            @include width-height(110px, 110px);
+            .dot{
+                @include width-height(60px, 60px);
+                border: solid $color-primary 5px;
+                border-right: solid transparent 5px;
+                border-radius: 50px;
+            }
+            .dot-2{
+                position: relative;
+                top: -55px;
+                @include width-height(30px, 30px);
+                border: solid $color-primary 5px;
+                border-left: solid transparent 5px;
+                border-radius: 50px;
+            }
+        }
+    }
+
+}
+#loading-spinner{
+    h1{
+        &::after{
+            animation: spinn-logo 1s ease-in;
+            animation-iteration-count: 3;
+            animation-delay: 0s;
+        }
+        &::before{
+            animation: spinn-logo 1s ease-in;
+            animation-iteration-count: 3;
+            animation-delay: 0.15s;
+        }
+    }
+}
+
+@keyframes spinn-logo
+{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0.5;
+    }
+    33%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.dots{
+    .dot{
+        animation: dot-anim 1s forwards;
+        animation-iteration-count: 3;
+    }
+    .dot-2{
+        animation: dot-anim-2 1s forwards;
+        animation-iteration-count: 3;
+    }
+}
+
+@keyframes dot-anim
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes dot-anim-2
+{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+#loading-spinner{
+    animation: end-spinner 0.1s forwards;
+    animation-delay: 3.15s;
+}
+
+@keyframes end-spinner
+{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform:scale(0);
+    }
+
+}

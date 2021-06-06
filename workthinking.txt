@@ -12,3 +12,36 @@ mettre la photo plus grosse et avec un dégradé
 
 animation de chargement :
 le logo avec des icones de bouffe a coté
+
+demander a moe si ca va pour le color transition 
+idem pour la transition after des tuile de restaurant
+
+#loading-spinner{
+h1{
+    &:hover{
+        &::after{
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+    &::after{
+        transition: opacity 0.2s;
+    }
+    &:active{
+        &::after{
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+        &::before{
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+}
+}
+        background: $color-secondary;
+        background-image: linear-gradient(280deg, rgba(255, 255, 255, 0.116) 50%, $color-primary 65%, rgba(255, 255, 255, 0.116) 100%);
+            background: $color-secondary;
+            background-image: linear-gradient(220deg, rgba(255, 255, 255, 0.116) 60%, $color-primary 70%, rgba(255, 255, 255, 0.116) 100%);
+            background: $color-secondary;
+            background-image: linear-gradient(240deg, rgba(255, 255, 255, 0.116) 23%, $color-primary 23%, rgba(0, 0, 0, 0.116) 100%);

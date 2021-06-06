@@ -1,0 +1,92 @@
+/*animation btn*/
+.btn{
+    transition: box-shadow 0.2s;
+    &:hover{
+        box-shadow: -2px -3px 10px -4px rgba(0, 0, 0, 0.377);
+        transition: box-shadow 0.2s;
+        &::after{
+            opacity: 1;
+            transition: opacity 0.2s;
+        }
+    }
+    &::after{
+        transition: opacity 0.2s;
+    }
+}
+/*animation Heart*/
+.like:hover{
+    .hover{
+        opacity: 1;
+        transition: opacity 0.3s;
+    }
+    .base{
+        opacity: 0;
+    }
+}
+
+/*animation Fonctionnement*/
+.functionning__card{
+    transition: box-shadow 0.3s;
+    &::after{
+        transition: opacity 0.3s;
+    }
+    i{
+        transition: color 0.3s;
+    }
+}
+.functionning__card:hover{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.377);
+    transition: box-shadow 0.3s, opacity 0.3s;
+    &::after{
+        opacity: 0.1;
+        transition: opacity 0.3s;
+    }
+    i{
+        color: $color-primary;
+    }
+}
+
+/*animation restaurant*/
+.restaurant__card{
+    transition: box-shadow 0.3s;
+    h3{
+        transition: color 0.3s;
+    }
+    img{
+        transition: opacity 0.3s;
+    }
+    &::after{
+        transition: opacity 0.3s;
+    }
+}
+.restaurant__card:hover{
+    box-shadow: 0px 0px 10px -4px rgba(0,0,0,0.34);
+    transition: box-shadow 0.3s;
+    img{
+        opacity: 0.9;
+        transition: opacity 0.3s;
+    }
+    &::after{
+        opacity: 0.085;
+        transition: opacity 0.3s;
+    }
+}
+/*animation footer*/
+footer li:hover{
+    opacity: 0.75;
+}
+/*animation plat et checkbox plat*/
+.course{
+    transition: box-shadow 0.2s;
+    .course__select{
+        transition: width 0.4s;
+    }
+}
+.course:hover{
+    transition: box-shadow 0.2s;
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.377);
+    .course__select{
+        transition: width 0.4s;
+        @include width-height(60px, 70px);
+    }
+}

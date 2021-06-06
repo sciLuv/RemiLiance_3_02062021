@@ -26,3 +26,19 @@
     max-height: $max-height;
     min-height: $max-width;
 }
+
+@mixin course-begin-anim($delay){
+        opacity: 0;
+        transform: translateY(20px);
+        animation: course-menu-anim 0.65s forwards;
+        animation-delay: $delay;
+
+}
+
+@mixin spin-loader-title($deg,$color1,$pc1,$pc2,$pc3){
+    background: $color-secondary;
+    background-image: linear-gradient($deg, $color1 $pc1, $color-primary $pc2, rgba(255, 255, 255, 0.116) $pc3);
+    color: rgba(0, 0, 0, 0);
+    background-clip: text;
+    -webkit-background-clip: text;
+}

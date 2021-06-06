@@ -1,0 +1,100 @@
+/*keyframe appartion titre menu*/
+.meal-part h3{
+    opacity: 0;
+    animation: title-menu-anim 0.65s forwards;
+    animation-delay: 0.2s;
+}
+@keyframes title-menu-anim
+{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*keyframe appartion plat menu*/
+.meal-part :nth-child(2){
+    @include course-begin-anim(0.4s)
+}
+.meal-part :nth-child(3){
+    @include course-begin-anim(0.6s);
+}
+
+.meal-part :nth-child(4){
+    @include course-begin-anim(0.8s);
+}
+
+.meal-part :nth-child(5){
+    @include course-begin-anim(1s);
+}
+@keyframes course-menu-anim
+{
+    0%{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+
+/*keyframe checkbox menu*/
+.course{
+    input{ 
+        animation: unhover-checkbox 1.2s forwards;
+    }
+}
+.course:hover{
+    input{
+        animation: hover-checkbox 0.65s forwards;
+    }
+}
+
+@keyframes hover-checkbox
+{
+    0%{
+        transform: scale(1) translate(50px) rotate(-640deg); 
+    }
+    70%{
+        transform: scale(1.07) translate(0px) rotate(30deg);
+    }
+    100%{
+        transform: scale(1) translate(0px) rotate(0deg);
+    }
+}
+@keyframes unhover-checkbox
+{
+    0%{
+        transform: translate(0px) rotate(0deg);
+    }
+    100%{
+        transform: translate(50px) rotate(0deg);
+    }
+}
+/*keyframe fleche retour page d'acceuil*/
+.header--menu__title__back-btn:hover i{
+    animation: arrow 1s;
+}
+@keyframes arrow
+{
+    0%{
+        transform: translate(0px); 
+    }
+    20%{
+        transform: translate(20px) scaleX(1.15);
+        opacity: 0.7;
+    }
+    40%{
+        transform: translate(00px) scaleX(0.8);
+        opacity: 1;
+    }
+    100%{
+        transform: translate(00px);
+    }
+}

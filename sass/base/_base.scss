@@ -1,6 +1,10 @@
+html{
+    overflow-x: hidden;
+}
 body{
     margin: 0px;
     @include flex;
+    overflow-x: hidden;
 }
 .content {
     @include width-height(100%, none, 1300px, 300px);
