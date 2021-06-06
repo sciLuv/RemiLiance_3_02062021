@@ -6,7 +6,6 @@
     justify-content: center;
     padding-top: 250px;
     background-color: $color-light;
-    /*transform: scale(0)*/
     div{
         @include flex;
         @include width-height(90%);
@@ -51,83 +50,5 @@
     }
 
 }
-#loading-spinner{
-    h1{
-        &::after{
-            animation: spinn-logo 1s ease-in;
-            animation-iteration-count: 3;
-            animation-delay: 0s;
-        }
-        &::before{
-            animation: spinn-logo 1s ease-in;
-            animation-iteration-count: 3;
-            animation-delay: 0.15s;
-        }
-    }
-}
 
-@keyframes spinn-logo
-{
-    0%{
-        opacity: 0;
-    }
-    15%{
-        opacity: 0.5;
-    }
-    33%{
-        opacity: 1;
-    }
-    66%{
-        opacity: 0.5;
-    }
-    100%{
-        opacity: 0;
-    }
-}
 
-.dots{
-    .dot{
-        animation: dot-anim 1s forwards;
-        animation-iteration-count: 3;
-    }
-    .dot-2{
-        animation: dot-anim-2 1s forwards;
-        animation-iteration-count: 3;
-    }
-}
-
-@keyframes dot-anim
-{
-    0%{
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-@keyframes dot-anim-2
-{
-    0%{
-        transform: rotate(360deg);
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
-#loading-spinner{
-    animation: end-spinner 0.1s forwards;
-    animation-delay: 3.15s;
-}
-
-@keyframes end-spinner
-{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform:scale(0);
-    }
-
-}

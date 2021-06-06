@@ -42,3 +42,9 @@
     background-clip: text;
     -webkit-background-clip: text;
 }
+
+@mixin tablet($breakpoint:map-get($responsive, tablet)){
+    @media(min-width : $breakpoint){
+    @content
+    }
+}

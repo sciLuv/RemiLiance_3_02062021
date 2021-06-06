@@ -1,9 +1,19 @@
 .restaurant{
     background-color: $color-info;
     @include padding-block;
+    div{
+        @include tablet{
+            grid-template-columns: 3fr 3fr 3fr;
+            grid-template-rows: 3fr 3fr 3fr;
+            margin-bottom: 35px;
+            grid-gap : 0%;
+        }
+    }
 }
 .restaurant__card{
     @include width-height(100%, 250px);
+    @include tablet{
+      }
     border-radius: 22px;
     margin-bottom: 20px;
     background-color: $color-light;

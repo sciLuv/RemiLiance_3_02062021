@@ -98,3 +98,106 @@
         transform: translate(00px);
     }
 }
+/*keyframe spinner load*/
+#loading-spinner{
+    animation: end-loading 0.5s ease-in forwards;
+    animation-delay: 2.7s;
+    h1{
+        animation: end-logo 0.35s ease-in forwards;
+        animation-delay: 2.6s;
+        &::after{
+            animation: spinn-logo 1s ease-in;
+            animation-iteration-count: 3;
+            animation-delay: 0s;
+        }
+        &::before{
+            animation: spinn-logo 1s ease-in;
+            animation-iteration-count: 3;
+            animation-delay: 0.15s;
+        }
+    }
+}
+@keyframes end-loading
+{
+    0%{
+        opacity: 1;
+        transform: scale(1);
+    }
+    99%{
+        opacity: 0;
+        transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+@keyframes end-logo
+{
+    0%{
+        transform: translate(0px, 0px) scale(1.5);
+    }
+    100%{
+        transform: translate(0px, -237px) scale(0.928);
+    }
+}
+@keyframes spinn-logo
+{
+    0%{
+        opacity: 0;
+    }
+    15%{
+        opacity: 0.5;
+    }
+    33%{
+        opacity: 1;
+    }
+    66%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.dots{
+    animation: dots-anim 0.2s forwards;
+    animation-delay: 2.6s;
+    .dot{
+        animation: dot-anim 1s forwards;
+        animation-iteration-count: 3;
+    }
+    .dot-2{
+        animation: dot-anim-2 1s forwards;
+        animation-iteration-count: 3;
+    }
+}
+@keyframes dots-anim
+{
+    0%{
+        opacity: 1;
+        transform: translate(0px, 0px);
+    }
+    100%{
+        opacity: 0;
+        transform: translate(0px, -90px);
+    }
+}
+@keyframes dot-anim
+{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes dot-anim-2
+{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
