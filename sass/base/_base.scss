@@ -3,9 +3,25 @@ html{
 }
 body{
     margin: 0px;
+    width: 100%;
     @include flex;
     overflow-x: hidden;
 }
 .content {
+    overflow: hidden;
+    position: relative;
     @include width-height(100%, none, 1300px, 300px);
+    @include desktop{
+        @include width-height(100%, none, 100%, 300px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+main {
+    overflow: hidden;
+    @include desktop{
+        width: 1300px;
+        max-width: 1300px;
+    }
 }

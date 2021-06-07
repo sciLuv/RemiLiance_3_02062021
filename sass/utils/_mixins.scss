@@ -45,6 +45,16 @@
 
 @mixin tablet($breakpoint:map-get($responsive, tablet)){
     @media(min-width : $breakpoint){
-    @content
+    @content;
+    }
+}
+@mixin laptop($breakpoint:map-get($responsive, laptop)){
+    @media(min-width : $breakpoint){
+    @content;
+    }
+}
+@mixin desktop($breakpoint:map-get($responsive, desktop)){
+    @media(min-width : $breakpoint){
+    @content;
     }
 }

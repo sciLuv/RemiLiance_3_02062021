@@ -8,6 +8,26 @@
     }
 }
 #localisation{
+    @include laptop{
+        height: 0px;
+        width: 150px;
+        position: absolute;
+        top: 38px;
+        right: 20px;
+        i{
+            color: $color-primary;
+        }
+        span{
+            font-weight: bold;
+        }
+    }
+    @include desktop{
+        height: 0px;
+        width: 150px;
+        position: relative;
+        top: -28px;
+        left: 550px
+    }
     @include flex;
     @include width-height(100%, 47px);
     background-color: $color-header;
@@ -23,16 +43,35 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MENUHEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .header--menu{
     @include width-height(100%, 310px);
+    @include desktop{
+        @include width-height(100%, 280px);
+        }
     .header--menu__title{
         @include flex(row);
         height: 65px;
         .header--menu__title__back-btn{
             @include position(absolute, auto, 20px, none);
+            @include desktop{
+                @include position(relative, auto, -527px, none);
+                }
         }
     }
     img{
         @include width-height(100%, 290px);
         @include position(relative, -1, none, none);
         object-fit: cover;
+        @include desktop{
+            @include width-height(100%, 500px);
+            }
+        }
+    .desktop-img-bg{
+        @include width-height(100%, 0px);
+        @include position(relative, -1, none, -270px);
+        background: linear-gradient(360deg, rgba(255,255,255,1) 38%, rgba(255,255,255,0) 100%);
+        opacity: 0;
+        @include desktop{
+            @include width-height(100%, 400px);
+            opacity: 1;
+            }
     }
 }

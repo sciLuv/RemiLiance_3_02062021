@@ -1,18 +1,26 @@
 .restaurant{
     background-color: $color-info;
     @include padding-block;
-    div{
+    @include laptop{
+        padding-top: 27px;
+    }
+    .box{
         @include tablet{
-            grid-template-columns: 3fr 3fr 3fr;
-            grid-template-rows: 3fr 3fr 3fr;
-            margin-bottom: 35px;
-            grid-gap : 0%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        @include laptop{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
         }
     }
 }
 .restaurant__card{
     @include width-height(100%, 250px);
     @include tablet{
+        @include width-height(100%, 250px);
       }
     border-radius: 22px;
     margin-bottom: 20px;

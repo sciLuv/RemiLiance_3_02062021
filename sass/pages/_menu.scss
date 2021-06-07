@@ -32,6 +32,17 @@
         padding-bottom: 7px;
         border-bottom: $color-tertiary 4px solid;
     }
+    .box{
+        @include tablet{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+        }
+        @include laptop{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
 }
 .course{
     @include flex(row, center);
@@ -74,4 +85,4 @@
         appearance: none;
         background-image: url(../../public/img/check-circle.svg);
     }
-}
+}}

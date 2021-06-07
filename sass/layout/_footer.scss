@@ -1,4 +1,13 @@
 footer{
+    @include desktop{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include width-height(100%);
+        .box{
+            @include width-height(1200px);
+        }
+    }
     @include padding-block(10px);
     background-color: $color-dark;
     h1{
