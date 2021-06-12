@@ -1,40 +1,17 @@
-les after des couleurs
+changer couleur présentation 
+sass plus compact, viré des doublons, utilisé des mixin ect
+commentaire
+réglé probleme w3c
+essayer de réduire le breakpoint laptop
+vérifié d'autre navigateur
+box shadow en dessous du header en version bureau.
+vérifié fonction :both donc tout le monde parle
+vérifié si les trois tuile de fonctionnement sont bien en grid, augmenter leurs marge intérieur
+form pour le paris belleville
+mailto pour le footer contact
+mettre le titre du footer sur la droite
+ajusté la hauteur du footer
+changer l'icone fonctionnement pour pouvoir l'animé avec opacité. 
 
-les animation des tuiles des restau, en plus des coeurs eux meme
-animations des liens footer
-animation de la fleche en haut
 
-pour le responsive :
-les tuiles par deux puis par trois en ligne. 
-les pages de menu :
-mettre la photo plus grosse et avec un dégradé
-
-
-animation de chargement :
-le logo avec des icones de bouffe a coté
-
-demander a moe si ca va pour le color transition 
-idem pour la transition after des tuile de restaurant
-
-les check box qui déconne sur mon portable
-finir le loader
-responsive
-
-/*
-#loading-spinner{
-    animation: end-spinner 0.1s forwards;
-    animation-delay: 3.15s;
-}
-
-@keyframes end-spinner
-{
-    0%{
-        opacity: 1;
-    }
-    100%{
-        opacity: 0;
-        transform:scale(0);
-    }
-
-}
-*/
+change section fonctionnement pour des div

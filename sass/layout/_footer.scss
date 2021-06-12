@@ -8,11 +8,15 @@ footer{
             @include width-height(1200px);
         }
     }
-    @include padding-block(10px);
+    @include padding-block(10px, 20px);
     background-color: $color-dark;
-    h1{
-        color: $color-light;
-        font-size: 1.15em;
+    .logo{
+        width: 160px;
+        h1{
+            color: $color-light;
+            font-size: 2em;
+            padding-left: 14px;
+        }
     }
     ul{
         padding: 0px;

@@ -8,6 +8,30 @@
     }
 }
 #localisation{
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    input{
+        border: none;
+        width: 150px;
+        font-size: 16px;
+        margin-left: 8px;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    input::placeholder{
+        color: $color-dark;
+        font-family: 'Roboto', sans-serif;
+    }
+    input:focus{
+        outline: 0px white solid;
+        border-bottom: $color-primary 2px solid;
+        border-top: rgba(255, 255, 255, 0) 2px solid;
+        &::placeholder{
+            color: lighten($color-dark, 25%);
+            font-weight: normal;
+        }
+
+    }
     @include laptop{
         height: 0px;
         width: 150px;
@@ -17,9 +41,12 @@
         i{
             color: $color-primary;
         }
-        span{
+        input{
             font-weight: bold;
+            border: none;
+            font-size: 16px;
         }
+
     }
     @include desktop{
         height: 0px;
@@ -34,10 +61,7 @@
     box-shadow: -4px 17px 18px -20px rgba(0, 0, 0, 0.432) inset;
     div{
         @include position;
-        left: -13px;
-        span{
-            margin-left: 11px;
-        }
+       left: 11px;
     }
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~MENUHEADER~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
