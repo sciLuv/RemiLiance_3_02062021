@@ -1,3 +1,5 @@
+/* mise en couleur et en forme du titre du spinnloader */
+/*pages layout*/
 html {
   overflow-x: hidden;
 }
@@ -46,6 +48,7 @@ main {
   }
 }
 
+/*Typography of the website*/
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -59,6 +62,7 @@ a {
   color: black;
 }
 
+/* all purple button of the site*/
 .btn {
   display: flex;
   flex-direction: column;
@@ -117,6 +121,7 @@ a {
   background-image: linear-gradient(177deg, rgba(255, 255, 255, 0) 50%, #9356DC 100%);
   color: rgba(0, 0, 0, 0);
   -webkit-background-clip: text;
+  background-clip: text;
   font-size: 21.7px;
   height: 18px;
   transition: opacity 0.3s;
@@ -306,6 +311,7 @@ a {
   }
 }
 
+/*all footer css properties */
 footer {
   padding: 10px 20px 20px 20px;
   background-color: #353535;
@@ -313,6 +319,7 @@ footer {
 @media (min-width: 1300px) {
   footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -357,6 +364,7 @@ footer ul li:nth-child(2) i {
   margin-right: 10px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANIMATION TRANSITION~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*animation btn*/
 .btn {
   transition: box-shadow 0.2s;
@@ -459,6 +467,7 @@ footer li:hover {
   min-height: none;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ANIMATION KEYFRAME~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 /*keyframe appartion titre menu*/
 .meal-part h3 {
   opacity: 0;
@@ -662,6 +671,7 @@ footer li:hover {
     transform: rotate(0deg);
   }
 }
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~Spinn Loader~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 #loading-spinner {
   position: absolute;
   z-index: 10;
@@ -779,6 +789,7 @@ footer li:hover {
   border-radius: 50px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ASIDE FUNCTIONNING~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .functionning {
   padding: 50px 20px 60px 20px;
   display: flex;
@@ -879,6 +890,7 @@ footer li:hover {
   font-size: 16px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE PRESENTATION~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .presentation {
   display: flex;
   flex-direction: column;
@@ -901,9 +913,11 @@ footer li:hover {
   margin: 25px 0px 0px 0px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE RESTAURANT~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .restaurant {
   background-color: #fbfbfb;
   padding: 50px 20px 60px 20px;
+  /* container of all restaurants presentations */
 }
 @media (min-width: 1154px) {
   .restaurant {
@@ -925,6 +939,7 @@ footer li:hover {
   }
 }
 
+/* section restaurant__card / presentation of a restaurant */
 .restaurant__card {
   width: 100%;
   max-width: none;
@@ -1036,6 +1051,7 @@ footer li:hover {
   top: 0.7px;
 }
 
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE MENU~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .menu {
   background-color: #fbfbfb;
   border-radius: 50px 50px 0px 0px;
@@ -1066,6 +1082,7 @@ footer li:hover {
   padding-top: 2px;
 }
 
+/*section meal-part /Each part of menu*/
 .meal-part h3 {
   width: 40px;
   padding-bottom: 7px;
@@ -1085,7 +1102,9 @@ footer li:hover {
     grid-gap: 20px;
   }
 }
-.meal-part .course {
+
+/*Course*/
+.course {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1096,8 +1115,10 @@ footer li:hover {
   margin-bottom: 20px;
   height: 70px;
   box-shadow: 0px 6px 10px -4px rgba(0, 0, 0, 0.34);
+  cursor: pointer;
 }
-.meal-part .course__info {
+
+.course__info {
   display: flex;
   flex-direction: row;
   align-items: none;
@@ -1110,19 +1131,19 @@ footer li:hover {
   min-height: none;
   margin-left: 15px;
 }
-.meal-part .course__info .course__info__name-ingredient {
+.course__info .course__info__name-ingredient {
   width: 70%;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.meal-part .course__info .course__info__name-ingredient h4 {
+.course__info .course__info__name-ingredient h4 {
   margin: 0px 0px 5px 0px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.meal-part .course__info .course__info__price {
+.course__info .course__info__price {
   display: flex;
   flex-direction: row;
   align-items: flex-end;
@@ -1130,7 +1151,8 @@ footer li:hover {
   font-weight: bold;
   margin-right: 25px;
 }
-.meal-part .course__select {
+
+.course__select {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1144,7 +1166,7 @@ footer li:hover {
   background-color: #99E2D0;
   border-radius: 0px 20px 20px 0px;
 }
-.meal-part .course__select input {
+.course__select input {
   width: 25px;
   max-width: none;
   min-width: none;

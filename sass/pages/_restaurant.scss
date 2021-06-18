@@ -1,9 +1,11 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE RESTAURANT~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .restaurant{
     background-color: $color-info;
     @include padding-block;
     @include laptop{
         padding-top: 27px;
     }
+/* container of all restaurants presentations */    
     .box{
         @include tablet{
             display: grid;
@@ -17,6 +19,7 @@
         }
     }
 }
+/* section restaurant__card / presentation of a restaurant */  
 .restaurant__card{
     @include width-height(100%, 250px);
     @include tablet{
@@ -80,7 +83,7 @@
                             left: 46.45px;
                             top: 0.7px;
                         }
-                }
+                    }
                 }
             }
         }

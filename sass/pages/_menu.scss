@@ -1,3 +1,4 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~ARTICLE MENU~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 .menu{
     background-color: $color-info;
     border-radius: 50px 50px 0px 0px;
@@ -26,6 +27,7 @@
         }
     }
 }
+/*section meal-part /Each part of menu*/
 .meal-part{
     h3{
         width: 40px;
@@ -43,7 +45,9 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 20px;
         }
+    }
 }
+/*Course*/
 .course{
     @include flex(row, center);
     background-color: $color-light;
@@ -52,6 +56,7 @@
     margin-bottom: 20px;
     height: 70px;
     box-shadow: 0px 6px 10px -4px rgba(0,0,0,0.34);
+    cursor: pointer;
 }
 .course__info{
     @include flex(row, none, space-between);
@@ -85,4 +90,4 @@
         appearance: none;
         background-image: url(../../public/img/check-circle.svg);
     }
-}}
+}

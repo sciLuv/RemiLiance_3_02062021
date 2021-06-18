@@ -34,7 +34,7 @@
         animation-delay: $delay;
 
 }
-
+/* mise en couleur et en forme du titre du spinnloader */
 @mixin spin-loader-title($deg,$color1,$pc1,$pc2,$pc3){
     background: $color-secondary;
     background-image: linear-gradient($deg, $color1 $pc1, $color-primary $pc2, rgba(255, 255, 255, 0.116) $pc3);

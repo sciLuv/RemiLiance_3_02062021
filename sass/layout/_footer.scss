@@ -1,8 +1,7 @@
+/*all footer css properties */
 footer{
     @include desktop{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex;
         @include width-height(100%);
         .box{
             @include width-height(1200px);

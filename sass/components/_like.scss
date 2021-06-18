@@ -5,6 +5,7 @@
     background-image: linear-gradient(177deg, $transparency 50%, $color-primary 100%);
     color: rgba(0, 0, 0, 0);
     -webkit-background-clip: text;
+    background-clip: text;
     font-size: 21.7px;
     height: 18px;
     transition: opacity 0.3s;
